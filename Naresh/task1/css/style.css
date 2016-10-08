@@ -1,0 +1,299 @@
+/*
+Index
+
+1. Top Header
+2. Manu
+3. Main container
+4. Footer
+
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*---------------Top Navigation--------------*/
+.top-header {
+	padding: 10px 0 8px;
+}
+.top-header a {
+    color: #000;
+    font-size: 13px;
+}
+.top-header a:hover {
+	text-decoration: none;
+}
+.contact_info .col-lg-4 {
+	border-right: 1px solid #ccc;
+}
+.contact_info .col-lg-4:last-child {
+	border: none;
+}
+.contact_info {
+	text-align: center;
+}
+.contact_info {
+	margin-top: 10px;
+}
+/*---------------End Top Navigation--------------*/
+/*---------------Main Navigation----------------*/
+.header-navigation {
+	background-color: #3576D4;
+}
+.header-navigation .navbar-default {
+	background: transparent;
+	border: none;
+}
+.header-navigation .navbar-default ul li a {
+	padding: 18px 16px;
+}
+.navbar-right {
+	margin-right: 0;
+}
+.nav-bar-left {
+	margin-left: -10px;
+}
+.header-navigation nav {
+	margin: 0;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+	background-color: #0D53B4;
+	color: #fff;
+}
+.header-navigation .navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+	background-color: #0D53B4;
+	color: #fff;
+}
+.header-navigation .navbar-default .navbar-nav > li > a:hover {
+	background-color: #0D53B4;
+	color: #fff;	
+}
+.cart-no {
+	position: relative;
+}
+.shp-cart-no {
+	background: #ffffff none repeat scroll 0 0;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	color: #3575b9;
+	font: bold 11px arial;
+	height: 18px;
+	left: 23px;
+	padding: 2px;
+	position: absolute;
+	text-align: center;
+	top: 9px;
+	width: 14px;
+}
+.nav.navbar-nav.navbar-right img {
+	height: 20px;
+}
+/*---------------End Main Navigation----------------*/
+/*---------------Slider Section----------------*/
+.slider_sction {
+	overflow-x: hidden;
+}
+.slider_sction .flexslider {
+	width: 100%;
+	border: 0;
+	margin-bottom: 0;
+}
+.slider_sction .flexslider img {
+	width: 100%;
+	height: 450px;
+}
+.flex-direction-nav a {
+	height: 60px;
+	text-align: center;
+	width: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.flex-direction-nav a:hover {
+	background-color: #3576D4;
+	color: #fff;
+}
+.flex-direction-nav a::before {
+	font-size: 44px;
+}
+.flex-direction-nav .flex-next {
+	text-align: center;
+	text-indent: 3px;
+}
+.flex-control-nav {
+	bottom: 4px;
+}
+/*---------------End Slider Section----------------*/
+/*---------------Main Main Content----------------*/
+/*Section 1*/
+.h_section1 {
+	background-color: #F3F3F3;
+}
+.btn.btn-default {
+	background-color: #3576D4;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+}
+.h_section1 h2, .h_section1 h4 {
+	font-weight: 800;
+	margin-top: 0;
+}
+.h_section1 .h_sec_cont {
+    height: 174px;
+}
+.h_section1 {
+    padding: 40px 0 42px;
+}
+.dot_com_cont > img {
+    float: right;
+    margin-right: 14px;
+}
+.h_section1 .col-lg-4 {
+    border-right: 1px solid #ccc;
+}
+.h_section1 .col-lg-4:last-child {
+	border: none;
+}
+/*Section 2*/
+
+.h_section2 .the-price {
+	background-color: rgba(220,220,220,.17);
+	box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+	padding: 20px;
+	margin: 0;
+}
+.h_section2 .the-price h1 {
+	line-height: 1em;
+	padding: 0;
+	margin: 0;
+}
+.h_section2 .subscript {
+	font-size: 25px;
+}
+/* CSS-only ribbon styles    */
+.h_section2 .cnrflash {
+	/*Position correctly within container*/
+	position: absolute;
+	top: -9px;
+	right: 4px;
+	z-index: 1; /*Set overflow to hidden, to mask inner square*/
+	overflow: hidden; /*Set size and add subtle rounding  		to soften edges*/
+	width: 100px;
+	height: 100px;
+	border-radius: 3px 5px 3px 0;
+}
+.h_section2 .cnrflash-inner {
+	/*Set position, make larger then 			container and rotate 45 degrees*/
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 145px;
+	height: 145px;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-o-transform: rotate(45deg); /* Opera */
+	-moz-transform: rotate(45deg); /* Firefox */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	-webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
+	-ms-transform-origin: 100% 100%;  /* IE 9 */
+	-o-transform-origin: 100% 100%; /* Opera */
+	-moz-transform-origin: 100% 100%; /* Firefox */
+	background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1,1,1,.2) 50%);
+	background-size: 4px,auto, auto,auto;
+	background-color: #aa0101;
+	box-shadow: 0 3px 3px 0 rgba(1,1,1,.5), 0 1px 0 0 rgba(1,1,1,.5), inset 0 -1px 8px 0 rgba(255,255,255,.3), inset 0 -1px 0 0 rgba(255,255,255,.2);
+}
+.h_section2 .cnrflash-inner:before, .cnrflash-inner:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	bottom: -16px;
+	width: 0;
+	height: 0;
+	border: 8px solid #800000;
+}
+.h_section2 .cnrflash-inner:before {
+	left: 1px;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+}
+.h_section2 .cnrflash-inner:after {
+	right: 0;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+}
+.h_section2 .cnrflash-label	{
+	/*Make the label look nice*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(1,1,1,.8);
+	font-size: 0.95em;
+	font-weight: bold;
+	text-align: center;
+}
+.pricing_section {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+	padding: 60px 0 40px;
+}
+.pricing_section .panel-body {
+	padding: 0;
+}
+.pricing_section .table {
+	margin-bottom: 0;
+}
+/*Section 3*/
+.h_section3 {
+	background-color: #f0f0f0;
+	padding: 60px 0;
+}
+.h_section3 .container {
+	background-color: #fff;
+}
+.tabs {
+	margin-top: -24px;
+}
+.tabs ul {
+	margin: 0 auto;
+	width: 58%;	
+}
+.tabs ul li {
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	padding: 12px 20px;
+	font-size: 16px;
+	color: #4481D8;
+	border: 1px solid #4481D8;
+	background-color: #fff;
+}
+.tabs ul li.first {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+}
+.tabs ul li:last-child {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+}
+.tabs ul li.active {
+	background-color: #3576d4;
+	color: #fff;
+}
+.tab_cont {
+    padding: 26px;
+}
+/*-------------End Main Main Content--------------*/
