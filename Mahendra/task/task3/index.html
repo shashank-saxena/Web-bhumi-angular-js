@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<script src="../angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<body>
+<div ng-app="fmodule">
+	<div ng-controller="fcont">
+		<div class="col-lg-3" ng-repeat="b in record.Books">
+			<img src="{{ b.Image }}">
+			<h3>{{ b.Title }}</h3>
+			<b>{{ b.SubTitle }}</b>	
+			<p>{{ b.Description }}</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
