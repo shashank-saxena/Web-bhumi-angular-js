@@ -8,7 +8,7 @@ myApp.service("firstService", ["$q","$http", function($q, $http) {
 myApp.controller('forthCtrl', ['$scope', 'firstService', function($scope, firstService) {
 	var p = firstService.getbook();
 	p.then(function suc(res){
-		console.log(res);
+		$scope.data = res;
 	}, function err(error) {
 		console.log(error);
 	});
