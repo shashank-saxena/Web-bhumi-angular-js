@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #ccc;
+}
+#cart .col-lg-3 img {
+	width: 100%;
+}
+#cart .col-lg-3 {
+	border: 12px solid #fff;
+	height: 692px;
+	margin: 12px;
+	padding: 0;
+	width: 22%;
+}
