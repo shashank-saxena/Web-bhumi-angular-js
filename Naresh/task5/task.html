@@ -6,18 +6,22 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/angular.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/service.js"></script>
+	<script type="text/javascript" src="app/controller.js"></script>
 </head>
 <body ng-app="myApp">
 	<div class="container" ng-controller="forthCtrl">
 		<div id="cart" class="row clearfix">
-			<div ng-repeat="b in data.data.Books">
-				<div class="col-lg-3">
-					<img src="{{b.Image}}" alt/>
-					<h3>{{b.Title}}</h3>
-					<h4>{{b.Description}}</h4>
-				</div>
+			
+			<div class="col-lg-3" ng-repeat="b in data">
+			<div class="item" ng-repeat="c in b">
+				<img src="{{c.Image}}" alt/>
+				<h3>{{c.Title}}</h3>
+				<h4>{{c.Description}}</h4>
+			</div>
 			</div>
 		</div>
 	</div>
