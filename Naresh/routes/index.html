@@ -6,22 +6,21 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/angular-route.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/routes.js"></script>
 	<script type="text/javascript" src="app/service.js"></script>
 	<script type="text/javascript" src="app/controller.js"></script>
 </head>
 <body ng-app="myApp">
-	<div class="container" ng-controller="forthCtrl">
-		<div id="cart" class="row clearfix">
-			<div class="col-lg-3" ng-repeat="b in data">
-				<div class="item" ng-repeat="c in b">
-					<img src="{{c.Image}}" alt/>
-					<h3>{{c.Title}}</h3>
-					<h4>{{c.Description}}</h4>
-				</div>
-			</div>
+	<div class="container">
+		<div class="col-lg-6">
+			<div class="tab-contenor">
+				<a href="#login" title="">Login</a>
+				<a href="#register" title="">Register</a>
+			</div>	
+			<div ng-view> </div>	
 		</div>
 	</div>
 </body>

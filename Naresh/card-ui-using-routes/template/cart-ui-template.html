@@ -1,0 +1,9 @@
+<div id="cart" class="row clearfix">
+	<div class="col-lg-3" ng-repeat="column in data">
+		<div class="item" ng-repeat="card in column">
+			<img ng-src="{{card.Image}}" alt=""/>
+			<h3>{{card.Title}}</h3>
+			<h4>{{card.Description}}</h4>
+		</div>
+	</div>
+</div>
