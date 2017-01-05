@@ -1,17 +1,9 @@
-angular.module('myApp').config(function($routeProvider) {
+angular.module('myApp').config(function($routeProvider, $locationProvider) {
 	$routeProvider.otherwise({
 		template : "<h1>None</h1><p>Nothing has been selected.</p>"
-	}).when ("/php", {
+	}).when ("/books/:bookname", {
 		templateUrl : "template/cart-ui-template.html",
 		controller : "firstCtrl"
-	}).when ("/java", {
-		templateUrl : "template/cart-ui-template.html",
-		controller : "secondCtrl"
-	}).when ("/javascript", {
-		templateUrl : "template/cart-ui-template.html",
-		controller : "thirdCtrl"
-	}).when ("/dotnet", {
-		templateUrl : "template/cart-ui-template.html",
-		controller : "forthCtrl"
 	});
+	$locationProvider.html5Mode(true);
 });
